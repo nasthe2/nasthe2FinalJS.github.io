@@ -3,16 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
   <title>Find a bug</title>
 </head>
 <body>
-  <h2>Выберите уровень сложности:</h2>
-  <h3>Выберите сложность и игра начнется. Чем выше уровень - тем больше будет выборка карт. </h3>
-  <div>
-    <div>Простой</div>
-    <div>Средний</div>
-    <div>Сложный</div>
+  <div class="page-wrapper">
+    <h2>Выберите уровень сложности:</h2>
+    <h3>Выберите сложность и игра начнется. Чем выше уровень - тем больше будет выборка карт.</h3>
+    
+    <div class='wrapper'>
+      <div class="button-block"><input type='button' class='button' value='Простой'/><div class="level selected"></div></div>
+      <div class="button-block"><input type='button' class='button' value='Средний'/><div class="level"></div></div>
+      <div class="button-block"><input type='button' class='button' value='Сложный'/><div class="level"></div></div>
+    </div>
+    
+
+    <div class='start'>
+      <input type='button' class='start' value='Начать игру'/>
+    </div>
+
+    <div class="welcome-cards">
+      <div class="first-welcome-card"></div>
+      <div class="second-welcome-card"></div>
+    </div>
+
   </div>
+
+  <div class="table-wrapper">
+    <div class="table">
+
+    </div>
+  </div>
+  
+
   <script src="./script.js"></script>
 </body>
 </html>
